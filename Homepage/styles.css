@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #E1F7F5; /* New navbar background color */
+}
+
+.nav-link {
+    color: black; /* Darker text color for contrast */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    margin-right: 20px; /* Increased margin for spacing between links */
+}
+
+.nav-link:hover {
+    color: #005B5B; /* Even darker color on hover */
+}
+
+.btn {
+    border-radius: 30px; /* Increased border radius for buttons */
+    padding: 10px 20px; /* Added padding for better appearance */
+    font-size: 16px; /* Increased font size */
+}
+
+.btn-primary {
+    background-color: #007BFF; /* Primary button background color (blue) */
+    color: white; /* Button text color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-outline-secondary {
+    color: #007BFF; /* Outline button text color (blue) */
+    border-color: #007BFF; /* Outline border color */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #007BFF; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.rounded-custom {
+    border-radius: 20px; /* Custom border radius for the image */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.rounded-custom:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
