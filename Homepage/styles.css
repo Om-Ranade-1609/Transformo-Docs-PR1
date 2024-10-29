@@ -1,7 +1,12 @@
-.navbar {
-    background-color: #E1F7F5; /* New navbar background color */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: #FBFBFB;
+    font-family: Poppins;
 }
-
+.navbar {
+    background-color: #b9f4fd;
+    opacity: 0.8; /* New navbar background color */
+}
 .nav-link {
     color: black; /* Darker text color for contrast */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
@@ -46,3 +51,94 @@
 .rounded-custom:hover {
     transform: scale(1.05); /* Slightly enlarge image on hover */
 }
+
+.adjust-margin{
+    margin-top: 125px;
+}
+
+
+.about-us-heading-change{
+    margin-top: 10px;
+}
+
+.adj-size{
+    max-width: 80%;
+}
+.adj-size-about{
+    max-width: 95%;
+}
+
+
+
+body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+}
+
+h2 {
+    color: black; /* Main heading color */
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.rounded-custom {
+    border-radius: 15px; /* Rounded corners for cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card-title {
+    color: rgb(1, 1, 33); /* Darker title color */
+}
+
+
+html, body {
+    height: 100%; /* Ensure full height for sticky footer */
+    margin: 0; /* Remove default margin */
+}
+
+html, body {
+    height: 100%; /* Ensure full height for sticky footer */
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.footer {
+    background-color: #b9f4fd; /* Match the header color */
+    padding: 15px 0; /* Padding for top and bottom */
+    margin: 0; /* Remove any default margin */
+    position: relative; /* Allow positioning for sticky */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer .nav {
+    border-bottom: 1px solid black; /* Thin black border */
+    padding-bottom: 10px; /* Padding below the nav links */
+}
+
+.footer .nav-link {
+    color: #000; /* Dark text color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer .nav-link:hover {
+    color: #005B5B; /* Darker color on hover */
+}
+
+.footer p {
+    margin: 10px 0 0; /* Adjust margin to ensure proper spacing */
+    color: #000; /* Dark text color for copyright */
+}
+
+.container {
+    max-width: 100%; /* Ensure the container uses the full width */
+    padding: 0 15px; /* Add some horizontal padding */
+}
+
