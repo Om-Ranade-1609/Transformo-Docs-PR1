@@ -1,0 +1,120 @@
+body {
+    background-color: #FBFBFB;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #b9f4fd !important;
+    opacity: 0.95;
+    box-shadow: none; /* Remove shadow */
+}
+
+.nav-link {
+    color: #333;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #005B5B;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+}
+
+
+/* Cancel Button Style */
+.btn-danger {
+    background-color: #007BFF; /* Change to match the primary button */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Match border radius */
+    color: white; /* Text color */
+    padding: 8px 20px; /* Match padding */
+    font-size: 16px; /* Match font size */
+}
+
+.btn-danger:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Main Section */
+.main-section {
+    flex-grow: 1; /* Allows main content to take remaining space */
+}
+
+.main-section h3 {
+    color: #007BFF;
+    font-weight: 600;
+}
+
+.upload-container {
+    border: 2px dotted #007BFF;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none; /* Remove shadow */
+}
+
+.upload-container:hover {
+    border-color: #005B5B;
+    background-color: #e5f3f9;
+}
+
+#uploadStatus {
+    color: #FF4C4C;
+    font-size: 14px;
+    padding: 8px 10px;
+    background-color: #ffe6e6;
+    border: 1px solid #ffb3b3;
+    border-radius: 5px;
+    display: none;
+}
+
+.uploaded-files h3 {
+    color: #333;
+    font-weight: 600;
+}
+
+.uploaded-files .list-group-item {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #f0f8ff;
+    transition: background-color 0.3s ease;
+}
+
+.uploaded-files .list-group-item:hover {
+    background-color: #e5f3f9;
+}
+
+#noFiles {
+    color: #6c757d;
+}
+
+/* Footer */
+.footer {
+    background-color: #b9f4fd;
+    color: #333;
+    margin-top: auto; /* Push footer to bottom */
+    padding: 15px 0; /* Padding for the footer */
+}
+
+.hidden {
+    display: none;
+}
+
+.progress-bar {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#successIcon i {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}

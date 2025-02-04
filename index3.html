@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocEase - Document Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top bg-light shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Homepage/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Homepage/index.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Homepage/index.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Homepage/index.html">Contact</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-primary me-2">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-section mt-5 pt-5 container">
+        <div class="upload-container p-4 mb-5 border border-primary rounded bg-white shadow">
+            <h3>Upload Document</h3>
+            <p class="text-muted">Select a machine-readable document (e.g., .txt only):</p>
+            <input type="file" id="fileInput" class="form-control" accept=".txt,.pdf,.docx,.xlsx,.pptx">
+            <button id="uploadBtn" class="btn btn-primary mt-3">Upload</button>
+            <div id="uploadStatus" class="mt-2"></div>
+        </div>
+
+        <!-- Conversion Prompt for Non-Machine-Readable Files -->
+        <div id="convertPrompt" class="hidden p-4 mt-3 border border-warning rounded" style="display: none;">
+            <p class="mb-3">The file uploaded is not machine-readable. Would you like to convert it to a machine-readable format (.txt)?</p>
+         
+            <a href="index4.html" class="btn btn-primary me-2">Convert to .txt</a>
+            <button id="cancelConvertBtn" class="btn btn-danger">Cancel</button>
+        </div>
+
+        <!-- Uploaded Documents List -->
+        <div class="uploaded-files mt-4">
+            <h3>Uploaded Documents</h3>
+            <ul id="fileList" class="list-group">
+                <li class="list-group-item">No files chosen yet.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 text-center">
+        <div class="container">
+            <p class="m-0">© 2024 DocEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index3.js"></script>
+</body>
+</html>
